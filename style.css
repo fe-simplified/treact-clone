@@ -44,6 +44,11 @@ li {
 
     padding: 1.2rem 3.2rem;
     border-radius: 25px;
+    cursor: pointer;
+}
+
+.theme-button:hover {
+    background-color: rgba(80, 17, 204);
 }
 
 .theme-button.small {
@@ -59,8 +64,16 @@ nav {
     padding-bottom: 0;
 }
 
+nav a {
+    padding-bottom: 0.4rem;
+}
+
 nav .row {
     justify-content: space-between;
+}
+
+.nav__logo--wrapper a {
+    padding-bottom: 0.4rem;
 }
 
 .nav__logo--text {
@@ -91,8 +104,18 @@ nav .row {
 }
 
 .nav__menu-link {
-    padding-right: 4.8rem;
+    margin-right: 4.8rem;
     font-size: 1.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.nav__menu-link:hover,
+.nav__menu-auth-link:first-child:hover {
+    display: inline-block;
+    color: rgb(100, 21, 255);
+    cursor: pointer;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid rgb(100, 21, 255);
 }
 
 .nav__menu-auth-links {
@@ -138,7 +161,7 @@ nav .row {
     font-size: 1.6rem;
     margin: 3.2rem 0;
     line-height: 2.4rem;
-    word-spacing: 1px;
+    text-align: left;
 }
 
 .landing__img--wrapper img {
@@ -153,11 +176,15 @@ nav .row {
 }
 
 .landing__form--email {
-    padding: 2rem calc(0.8rem * 24) 2rem 3.2rem;
+    padding: 2rem calc(0.8rem * 20) 2rem 3.2rem;
     border: rgba(160, 174, 192, 0.774) solid 1px;
     border-radius: 30px;
     font-size: 1.6rem;
     border-width: 2px;
+}
+
+.landing__form--email:hover {
+    border-color: rgba(160, 174, 192, 1);
 }
 
 .landing__form--email:focus {
