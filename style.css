@@ -29,3 +29,16 @@ li {
     max-width: 1200px;
     display: flex;
 }
+
+.theme-button {
+    background-color: rgb(100, 21, 255);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme-button.small {
+    font-size: 1.4rem;
+}
