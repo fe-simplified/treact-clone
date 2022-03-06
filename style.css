@@ -134,6 +134,10 @@ nav .row {
     margin: 0 2.4rem;
 }
 
+nav .theme-button {
+    margin-bottom: 0.4rem;
+}
+
 /* landing  */
 
 .landing {
