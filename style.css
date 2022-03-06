@@ -42,3 +42,61 @@ li {
 .theme-button.small {
     font-size: 1.4rem;
 }
+
+/* nav */
+nav {
+    padding: 3.2rem;
+    padding-bottom: 0;
+}
+
+nav .row {
+    justify-content: space-between;
+}
+
+.nav__logo--text {
+    font-weight: 900;
+    font-size: 2.4rem;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo--text:hover {
+    color: rgb(100, 21, 255);
+}
+
+.nav__logo {
+    width: 4rem;
+    margin-right: 1.2rem;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.nav__menu-links {
+    display: flex;
+}
+
+.nav__menu-link {
+    padding-right: 4.8rem;
+    font-size: 1.4rem;
+}
+
+.nav__menu-auth-links {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.nav__menu-auth-link:first-child {
+    margin: 0 2.4rem;
+}
+
+.nav__menu-auth-link:last-child {
+    padding: 1.2rem 3.2rem;
+    border-radius: 25px;
+}
