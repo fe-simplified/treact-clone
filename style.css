@@ -1,3 +1,4 @@
+/* starting approach is based on 1024px screen resolution width */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
 
 * {
@@ -14,6 +15,9 @@ html {
 body {
     font-size: 1.6em;
     font-family: Inter, system-ui;
+    width: 100vw;
+    overflow-x: hidden;
+    padding: 3.2rem;
 }
 
 a {
@@ -37,15 +41,21 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding: 1.2rem 3.2rem;
+    border-radius: 25px;
 }
 
 .theme-button.small {
     font-size: 1.4rem;
 }
 
+.purple-text {
+    color: rgb(100, 21, 255);
+}
+
 /* nav */
 nav {
-    padding: 3.2rem;
     padding-bottom: 0;
 }
 
@@ -96,7 +106,100 @@ nav .row {
     margin: 0 2.4rem;
 }
 
-.nav__menu-auth-link:last-child {
-    padding: 1.2rem 3.2rem;
-    border-radius: 25px;
+/* landing  */
+
+.landing {
+    padding: 9.6rem 0;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.landing__hook--wrapper {
+    width: calc(100vw * 41.6667%);
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.landing__img--wrapper {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.landing h1 {
+    font-size: 4rem;
+}
+
+.landing__hook--para {
+    font-size: 1.6rem;
+    margin: 3.2rem 0;
+    line-height: 2.4rem;
+    word-spacing: 1px;
+}
+
+.landing__img--wrapper img {
+    align-self: flex-end;
+    min-width: 0px;
+    max-width: 51.2rem;
+}
+
+.landing__form {
+    position: relative;
+    width: 100%;
+}
+
+.landing__form--email {
+    padding: 2rem calc(0.8rem * 24) 2rem 3.2rem;
+    border: rgba(160, 174, 192, 0.774) solid 1px;
+    border-radius: 30px;
+    font-size: 1.6rem;
+    border-width: 2px;
+}
+
+.landing__form--email:focus {
+    outline: transparent solid 2px;
+}
+
+.landing__form--email:focus:not(:hover) {
+    border-color: rgb(100, 21, 255);
+    transition-duration: 300ms;
+}
+
+.landing__form--submit {
+    position: absolute;
+    top: 0.7rem;
+    right: 0.8rem;
+    font-size: 1.6rem;
+    padding: 1.6rem 0;
+    width: 16rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.landing__partners {
+    margin-top: 9.6rem;
+    width: 100%;
+}
+
+.landing__partners--para {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: gray;
+    opacity: 0.75;
+}
+
+.landing__partners--img {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.landing__partners--img img {
+    max-width: 100%;
+    margin-top: 1.6rem;
+    padding: 0 6.4rem 0 0;
 }
