@@ -109,13 +109,18 @@ nav .row {
     padding-bottom: 0.4rem;
 }
 
+.nav__menu-link,
+.nav__menu-auth-link:first-child {
+    border-bottom: 2px solid transparent;
+}
+
 .nav__menu-link:hover,
 .nav__menu-auth-link:first-child:hover {
     display: inline-block;
     color: rgb(100, 21, 255);
     cursor: pointer;
     padding-bottom: 0.4rem;
-    border-bottom: 2px solid rgb(100, 21, 255);
+    border-color: rgb(100, 21, 255);
 }
 
 .nav__menu-auth-links {
