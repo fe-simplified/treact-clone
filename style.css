@@ -70,6 +70,7 @@ nav a {
 
 nav .row {
     justify-content: space-between;
+    margin: 0 auto;
 }
 
 .nav__logo--wrapper a {
@@ -107,6 +108,8 @@ nav .row {
     margin-right: 4.8rem;
     font-size: 1.4rem;
     padding-bottom: 0.4rem;
+    display: flex;
+    align-items: center;
 }
 
 .nav__menu-link,
@@ -148,15 +151,13 @@ nav .theme-button {
 }
 
 .landing__hook--wrapper {
-    width: calc(100vw * 41.6667%);
+    width: 41.666667%;
     max-width: none;
     display: flex;
     flex-direction: column;
-    flex: 1;
 }
 
 .landing__img--wrapper {
-    flex: 2;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -175,21 +176,44 @@ nav .theme-button {
 
 .landing__img--wrapper img {
     align-self: flex-end;
-    min-width: 0px;
-    max-width: 51.2rem;
+    width: 100%;
+    max-width: 70rem;
 }
 
 .landing__form {
     position: relative;
     width: 100%;
+    max-width: 44.8rem;
 }
 
 .landing__form--email {
-    padding: 2rem calc(0.8rem * 20) 2rem 3.2rem;
+    width: 100%;
+    padding: 2rem calc(0.8rem * 21) 2rem 3.2rem;
     border: rgba(160, 174, 192, 0.774) solid 1px;
     border-radius: 30px;
     font-size: 1.6rem;
     border-width: 2px;
+    font-weight: 600;
+}
+
+.landing__form--email::-webkit-input-placeholder {
+    color: rgba(160, 174, 192, 0.774);
+    font-weight: 550;
+}
+
+.landing__form--email::-webkit-input-placeholder {
+    color: rgba(160, 174, 192, 0.774);
+    font-weight: 550;
+}
+
+.landing__form--email::-moz-placeholder {
+    color: rgba(160, 174, 192, 0.774);
+    font-weight: 550;
+}
+
+.landing__form--email::-ms-input-placeholder {
+    color: rgba(160, 174, 192, 0.774);
+    font-weight: 550;
 }
 
 .landing__form--email:hover {
@@ -207,13 +231,19 @@ nav .theme-button {
 
 .landing__form--submit {
     position: absolute;
-    top: 0.7rem;
-    right: 0.8rem;
+    width: 16rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
     font-size: 1.6rem;
     padding: 1.6rem 0;
-    width: 16rem;
+    /* width: 16rem; */
+    margin: 0.5rem 0;
+    margin-right: 0.5rem;
+    /* width: 16rem;
     font-weight: bold;
     line-height: 1;
+    margin: 0.5em 0; */
 }
 
 .landing__partners {
