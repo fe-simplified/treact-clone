@@ -152,7 +152,7 @@ nav .row {
 .nav__menu-auth-link:first-child:hover {
     display: inline-block;
     color: rgb(100, 21, 255);
-    cursor: pointer;
+    cursor: not-allowed;
     padding-bottom: 0.4rem;
     border-color: rgb(100, 21, 255);
 }
@@ -170,6 +170,7 @@ nav .row {
 
 nav .theme-button {
     margin-bottom: 0.4rem;
+    cursor: not-allowed;
 }
 
 /* landing  */
