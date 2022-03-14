@@ -1,6 +1,16 @@
 /* starting approach is based on 1024px screen resolution width */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
 
+:root {
+    --default-resolution-px: 1200px;
+    --default--resolution-rem: 120rem;
+    --treact-desktop-size: 1280px;
+    --ratio: calc(
+        var(--treact-desktop-size) /
+            var(--default-resolution-px)
+    );
+}
+
 * {
     padding: 0;
     margin: 0;
