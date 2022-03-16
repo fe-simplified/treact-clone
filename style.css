@@ -597,7 +597,7 @@ section:first-child {
     border-top-right-radius: 0.8rem;
 }
 
-.price__tier--clip.green {
+.green {
     background: linear-gradient(
         115deg,
         rgb(56, 178, 172) 0%,
@@ -605,7 +605,7 @@ section:first-child {
     );
 }
 
-.price__tier--clip.red {
+.red {
     background: linear-gradient(
         115deg,
         rgb(245, 101, 101) 0%,
@@ -613,12 +613,23 @@ section:first-child {
     );
 }
 
-.price__tier--container.premium {
+.premium {
     background: linear-gradient(
         135deg,
         rgb(76, 81, 191) 0%,
         rgb(102, 126, 234) 100%
     );
+}
+
+.price__consumer--type {
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.premium .price__consumer--type {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-color: rgba(102, 126, 234, 1);
 }
 
 .price__tier--container.premium .normal-text,
@@ -634,7 +645,7 @@ section:first-child {
     position: relative;
 }
 
-.price__tier--container header {
+.price__tier--container .flex-column {
     align-items: center;
     padding: 2.4rem 0;
     border-bottom: 1px solid var(--gray-border);
@@ -644,7 +655,8 @@ section:first-child {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2.4rem 0;
+    padding: 3.2rem;
+    border-bottom: 1px solid var(--gray-border);
 }
 
 .price__tier--type {
@@ -661,4 +673,29 @@ section:first-child {
 
 .price__tier--cost {
     font-weight: 700;
+}
+
+.price__consumer__cta {
+    display: flex;
+    justify-content: center;
+    padding: 3.2rem 6.4rem;
+}
+
+.price__button {
+    padding: 1.6rem 4.8rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+}
+
+.price__button:hover {
+    box-shadow: 0px 25px 25px -5px rgba(0, 0, 0, 0.12);
+    transform: translateX(1px) translateY(-1px);
+    animation: transform 300ms ease;
+}
+
+.premium .price__button {
+    color: rgba(102, 126, 234, 1);
 }
