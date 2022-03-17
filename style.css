@@ -156,7 +156,6 @@ nav .row {
     color: black;
     display: flex;
     align-items: center;
-    cursor: pointer;
 }
 
 .nav__logo--text:hover {
@@ -585,7 +584,9 @@ section:first-child {
 }
 
 .price__tier--list {
-    justify-content: space-evenly;
+    justify-content: space-between;
+    position: relative;
+}
 }
 
 .price__tier--clip {
