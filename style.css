@@ -161,6 +161,7 @@ nav .row {
     color: black;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .nav__logo--text:hover {
