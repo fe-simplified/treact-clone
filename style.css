@@ -35,6 +35,11 @@ body {
     padding: 3.2rem;
 }
 
+a,
+button {
+    cursor: not-allowed;
+}
+
 a {
     text-decoration: none;
 }
