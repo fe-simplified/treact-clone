@@ -1,14 +1,11 @@
 /* starting approach is based on 1024px screen resolution width */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap");
 
 :root {
     --default-resolution-px: 1200px;
     --default--resolution-rem: 120rem;
     --treact-desktop-size: 1280px;
-    --ratio: calc(
-        var(--treact-desktop-size) /
-            var(--default-resolution-px)
-    );
+    --ratio: calc(var(--treact-desktop-size) / var(--default-resolution-px));
     --light-gray: #d5d8dd;
     --purple: rgba(100, 21, 255, 1);
     --purple-hover: rgba(80, 17, 204, 1);
@@ -137,6 +134,9 @@ main > section {
     padding: 9.6rem 0;
 }
 
+.two-column {
+    width: calc(100% / 2);
+}
 /* nav */
 nav {
     padding-bottom: 0;
@@ -320,9 +320,9 @@ nav .theme-button {
     margin: 0.5rem 0;
     margin-right: 0.5rem;
     /* width: 16rem;
-    font-weight: bold;
-    line-height: 1;
-    margin: 0.5em 0; */
+        font-weight: bold;
+        line-height: 1;
+        margin: 0.5em 0; */
 }
 
 .landing__partners {
@@ -614,27 +614,15 @@ section:first-child {
 }
 
 .green {
-    background: linear-gradient(
-        115deg,
-        rgb(56, 178, 172) 0%,
-        rgb(129, 230, 217) 100%
-    );
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
 }
 
 .red {
-    background: linear-gradient(
-        115deg,
-        rgb(245, 101, 101) 0%,
-        rgb(254, 178, 178) 100%
-    );
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
 
 .premium {
-    background: linear-gradient(
-        135deg,
-        rgb(76, 81, 191) 0%,
-        rgb(102, 126, 234) 100%
-    );
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
 }
 
 .price__consumer--type {
@@ -715,4 +703,92 @@ section:first-child {
 
 .premium .price__button {
     color: rgba(102, 126, 234, 1);
+}
+
+#testimonials .container {
+    justify-content: center;
+}
+
+.testimonials__img--wrapper img {
+    width: 100%;
+}
+
+.testimonials__content--container {
+    padding-left: 6.4rem;
+}
+
+.testimonials__content--container .normal-text {
+    font-size: 1.7rem;
+}
+
+.testimonials__slider {
+    margin-top: 4.8rem;
+}
+
+.testimonials__ratings--container svg {
+    width: 2rem;
+    fill: rgba(246, 173, 85, 1);
+}
+
+.testimonial__feedback--headline {
+    margin-top: 1.6rem;
+}
+
+.testimonials__ratings--para {
+    margin-top: 2.4rem;
+    font-size: 1.5rem;
+}
+
+.ratings__info--container {
+    margin-top: 4.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ratings__review--info {
+    display: flex;
+    align-items: center;
+}
+
+.ratings__user-photo--container img {
+    width: 8rem;
+    border-radius: 99%;
+}
+
+.ratings__user--info {
+    margin-left: 3.2rem;
+}
+
+.ratings__user--info h5 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.ratings__user--info .normal-text {
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.slider__button-controls--container {
+    display: flex;
+    align-items: center;
+}
+
+.slider__button {
+    margin: 0 1.6rem;
+    border-radius: 99%;
+    width: 100%;
+}
+
+.slider__button svg {
+    width: 4.8rem;
+    padding: 1.5rem;
+    color: var(--purple);
+}
+
+.divider {
+    height: 33%;
+    color: black;
+    display: block;
+    border-right: 1px solid var(--gray-border);
 }
