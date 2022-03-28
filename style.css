@@ -805,7 +805,7 @@ section:first-child {
 .short-container {
     display: flex;
     justify-content: space-between;
-    padding: 6rem 12rem;
+    padding: 9.6rem 12rem;
     background-color: var(--purple);
     color: white;
     width: 100%;
@@ -833,8 +833,8 @@ section:first-child {
 }
 
 .circle-one {
-    left: -10rem;
-    bottom: -14rem;
+    left: -12.5rem;
+    bottom: -11rem;
 }
 
 .circle-two {
