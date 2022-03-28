@@ -792,3 +792,71 @@ section:first-child {
     display: block;
     border-right: 1px solid var(--gray-border);
 }
+
+#banner .container {
+    display: flex;
+    justify-content: center;
+}
+
+#banner .row {
+    justify-content: center;
+}
+
+.short-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 12rem;
+    background-color: var(--purple);
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner__title {
+    font-size: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.banner__button--wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.short-container svg {
+    position: absolute;
+    width: 30rem;
+    color: rgba(80, 17, 204, 1);
+    z-index: 1;
+}
+
+.circle-one {
+    left: -10rem;
+    bottom: -14rem;
+}
+
+.circle-two {
+    top: -24rem;
+    right: -8rem;
+}
+
+.banner__button {
+    padding: 1.6rem 4.5rem;
+    border-radius: 100px;
+    font-weight: bold;
+    color: inherit;
+    width: auto;
+    font-size: 1.6rem;
+}
+
+.banner__button:first-child {
+    margin-right: 3.2rem;
+    background-color: #f56565;
+}
+
+.banner__button:last-child {
+    border: 1px solid white;
+    background: inherit;
+}
